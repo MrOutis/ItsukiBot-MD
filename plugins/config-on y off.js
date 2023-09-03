@@ -88,7 +88,7 @@ if (!(isAdmin || isOwner)) {
 global.dfail('admin', m, conn)
 throw false
 }}
-chat.antifake = isEnable          
+chat.onlyLatinos = isEnable          
 break
 
 case 'autosticker':
