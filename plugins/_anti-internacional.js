@@ -4,7 +4,7 @@ handler.before = async function (m, {conn, isAdmin, isBotAdmin} ) {
 }
 if (!m.isGroup) return !1
 let chat = global.db.data.chats[m.chat]
-if (isBotAdmin && chat.antifake) {
+if (isBotAdmin && chat.onlyLatinos) {
 let texto = `✳️ En este grupo solo se permite personas de habla hispana`
 	
 if (m.sender.startsWith('6' || '6')) {
